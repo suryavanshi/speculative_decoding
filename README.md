@@ -43,11 +43,11 @@ You can modify the models, decoding parameters, and number of tokens in the `ben
 
 Speculative decoding follows these key steps:
 
-1. 📝 Use a smaller "draft" model to quickly generate multiple tokens
-2. 🔄 Pass these draft tokens to the larger "target" model 
-3. 🔍 Compare probabilities from both models to decide which draft tokens to accept
-4. ➕ Generate an additional token with the target model
-5. 🔁 Repeat the process
+- 📝 Use a smaller "draft" model to quickly generate multiple tokens
+- 🔄 Pass these draft tokens to the larger "target" model 
+- 🔍 Compare probabilities from both models to decide which draft tokens to accept
+- ➕ Generate an additional token with the target model
+- 🔁 Repeat the process
 
 This allows the target model to potentially generate multiple tokens per forward pass, leading to significant speedups.
 
